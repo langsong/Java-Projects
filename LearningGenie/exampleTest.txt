@@ -1,0 +1,33 @@
+#Is it a screenplay of J.R.R.Tolkien best-selling series?
+#Is Frodo the main character?
+Lord of the Rings
+The Hobbit
+#Does it take place on the ocean?
+#Does it feature a large shark?
+Jaws
+#Does it feature a tiger?
+Life of Pi
+#Is it a cartoon?
+#Is the ocean a character?
+Moana
+#Is the main character a clown fish?
+Finding Nemo
+Finding Dory
+The Titantic
+#Does it take place in a desert?
+Mad Max
+#Does it take take place in space?
+#Is it a spoof?
+SpaceBalls
+Star Wars
+#Is the main character a female superhero?
+Wonder Woman
+#Are there multiple superheroes in this movie?
+#Does it come out on Nov 2nd, 2017?
+Thor: Ragnarok
+The Avengers
+#Does the superhero have a cool car?
+Batman
+#Is it related to spider?
+Spiderman
+Superman
