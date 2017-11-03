@@ -1,0 +1,94 @@
+Problem 1: Contains
+
+Chosen operations to count:
+	We decided to count the operation "if(Math.abs(d_1 - arr[i]) < eps)" as one unit of energy.
+Input:  the number of steps we take (n) is dependent upon the length of int[] arr
+Worst Case Scenario: 
+	The first value in arr that has the difference (with respect to d_1) with an absolute 
+	value less than the given epsilon would be at the end of the arr OR does not occur at all. 
+Time Complexity: 
+ T(n) = n
+Tight Upper Bound: 
+ T(n) = O(n)
+ If x_0 = 1, then n + x_0 = n + 1 > T(n) 
+ 
+Problem 2: Fast Exponentiation
+ 
+Chosen operations to count:
+	We decided to count each recursive call as one unit of energy
+Input: The number of steps we take (n) is dependent upon the value of y. 
+Time Complexity: 
+ T(n) = T(n/2) + 1
+Explicit Formula: 
+ T(n) = log2(n) + 1
+Tight Upper Bound: 
+ T(n) = O(log2(n))
+ If x_0 = 2 then log2(n) + 2 > T(n) 
+
+Problem 3: All Pairs
+
+Chosen operations to count:
+	We decided to count all of "ret[j + (arr.length * i)] = new Pair(arr[i], arr[j]);"  as 
+	one step, or as one unit of expended energy.
+Input:  the number of steps we take (n) is dependent upon the length of int[] arr
+Time Complexity: 
+ T(n) = n^2
+Tight Upper Bound: 
+ T(n) = O(n^2) 
+ If c = 2 then 2*n^2 > T(n)
+ 
+Problem 4: Concat-Replicate
+ 
+Chosen operations to count:
+	We decided to count all calls to "ret += arr[i];"  as one step, or as one unit of expended energy.
+Input:  the number of steps we take is dependent upon 
+	m the length of int[] arr
+	n the size of int n.		
+Time Complexity: 
+ T(m, n) = m * n
+Tight Upper Bound: 
+ T(m, n) = O(m * n) 
+ If c = 2 then 2*n*m > T(m, n)
+Java String concatenation (additional steps):
+ New Input: the number of steps we take is dependent upon 
+ 	m the length of int[] arr
+ 	n the size of int n
+ 	z the length of our longest String in arr
+ New time Complexity:
+  	T(m, n, z) = m * n * z
+  	The run time increases at most by z times. 
+   
+Problem 5: Interleave
+
+Chosen operations to count:
+	We decided to count all assignments to elements in int[] ret as 3 steps
+	(we are negating the small cost of the "+ 1" step) 
+Input:  the number of steps we take is dependent upon 
+			n the length of int[] arr1 
+			m the length of int[] arr2.
+Time Complexity: 
+ T(n, m) = 3 * (n + m) 
+Tight Upper Bound: 
+ T(n, m) = O(n + m) 
+ If c = 4 then 4 * (n + m) > T(n, m)
+Space Complexity: 
+ S(n, m) = n + m + 2
+Tight Upper Bound: 
+ S(n, m) = O(n + m) 
+ If x_0 = 3 then n + m + 3 > S(n, m).
+ 
+We don't believe that our time complexities show any consistent relationship between 
+time and space complexities. However, the time complexity may show a correlation 
+with the space complexity when allocation of space happens recursively/repetitively,
+and in those cases, we think that the Big-O bound for space complexity also applies
+to its time complexity.
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
